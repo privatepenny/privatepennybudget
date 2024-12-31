@@ -69,7 +69,7 @@ const PaymentReminders = () => {
     }
   
     try {
-      const response = await fetch(`/reminders/${id}`, {
+      const response = await fetch(`https://privatepennybudget-backend.onrender.com/reminders/${id}`, {
         method: 'PUT',
         body: JSON.stringify({ checkbox: newCheckboxValue }),
         headers: {
@@ -104,7 +104,7 @@ const PaymentReminders = () => {
     }
 
     try {
-      const response = await fetch(`/reminders/${id}`, {
+      const response = await fetch(`https://privatepennybudget-backend.onrender.com/reminders/${id}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${user.token}`,
@@ -140,7 +140,7 @@ const PaymentReminders = () => {
     const updatedReminder = { name: editName, date: editDate, amount: editAmount };
 
     try {
-      const response = await fetch(`/reminders/${editingReminderId}`, {
+      const response = await fetch(`https://privatepennybudget-backend.onrender.com/reminders/${editingReminderId}`, {
         method: 'PUT',
         body: JSON.stringify(updatedReminder),
         headers: {

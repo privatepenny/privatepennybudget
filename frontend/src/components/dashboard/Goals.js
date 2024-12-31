@@ -54,7 +54,7 @@ const Goals = () => {
     }
 
     try {
-      const response = await fetch(`/goals/${id}`, {
+      const response = await fetch(`https://privatepennybudget-backend.onrender.com/goals/${id}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${user.token}`,
@@ -89,7 +89,7 @@ const Goals = () => {
     const updatedGoal = { name: editName, amountGoal: editAmount };
 
     try {
-      const response = await fetch(`/goals/${editingGoalId}`, {
+      const response = await fetch(`https://privatepennybudget-backend.onrender.com/goals/${editingGoalId}`, {
         method: 'PUT',
         body: JSON.stringify(updatedGoal),
         headers: {

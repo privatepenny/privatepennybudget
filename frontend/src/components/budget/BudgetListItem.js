@@ -31,7 +31,7 @@ const BudgetListItem = ({ budget, onSelectBudget }) => {
     const handleSetDefault = async () => {
         if (!user) return;
 
-        const response = await fetch(`/budgets/${budget._id}/default`, {
+        const response = await fetch(`https://privatepennybudget-backend.onrender.com/budgets/${budget._id}/default`, {
             method: 'PUT',
             headers: {
                 'Authorization': `Bearer ${user.token}`,

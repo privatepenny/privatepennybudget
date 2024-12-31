@@ -131,7 +131,7 @@ const BatchTransactionForm = () => {
                 ? parseFloat(goal.amountActual) + parseFloat(value)
                 : parseFloat(goal.amountActual) - parseFloat(value)
 
-            const goalResponse = await fetch(`/goals/${goal._id}`, {
+            const goalResponse = await fetch(`https://privatepennybudget-backend.onrender.com/goals/${goal._id}`, {
                 method: 'PUT',
                 body: JSON.stringify({ amountActual: updatedAmount }),
                 headers: {
