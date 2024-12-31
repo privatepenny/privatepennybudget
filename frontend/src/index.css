@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme: Ocean */
+.theme-ocean {
+    --dark1: #012A36;
+    --dark2: #014F6D;
+    --dark3: #026B8E;
+    --light1: #E0F7FA;
+    --light2: #B2EBF2;
+    --light3: #81D4FA;
+    --button: #0288D1;
+    --buttonHover: #026B8E;
+    --button2: #3b82f6;
+    --buttonHover2: #1068f4;
+    --bodyTextDark: #000000;
+    --bodyTextLight: #FFFFFF;
+    --formInput: #FFFFFF;
+    --formInputDenied: #a5a5a5;
+    --warningColor: #f98080;
+    --warningText: #4b4b4b;
+    --navbarHover: #FFDFA6;
+    --progressBar: #e5e7eb;
+}
+
+/* Theme: Forest */
+.theme-forest {
+    --dark1: #1B2B18;
+    --dark2: #335233;
+    --dark3: #4F6D45;
+    --light1: #f4f7ef;
+    --light2: #DCE5CC;
+    --light3: #C3D4B2;
+    --button: #6D8B55;
+    --buttonHover: #4F6D45;
+    --button2: #3b82f6;
+    --buttonHover2: #1068f4;
+    --bodyTextDark: #000000;
+    --bodyTextLight: #FFFFFF;
+    --formInput: #FFFFFF;
+    --formInputDenied: #a5a5a5;
+    --warningColor: #f98080;
+    --warningText: #4b4b4b;
+    --navbarHover: #FFDFA6;
+    --progressBar: #e5e7eb;
+}
+
+/* Theme: Bouquet */
+.theme-bouquet {
+    --dark1: #311D3F;
+    --dark2: #5A3A6F;
+    --dark3: #7D527A;
+    --light1: #FFF0F6;
+    --light2: #FBCFE8;
+    --light3: #F5AFFC;
+    --button: #C08497;
+    --buttonHover: #7D527A;
+    --button2: #3b82f6;
+    --buttonHover2: #1068f4;
+    --bodyTextDark: #000000;
+    --bodyTextLight: #FFFFFF;
+    --formInput: #FFFFFF;
+    --formInputDenied: #a5a5a5;
+    --warningColor: #f98080;
+    --warningText: #4b4b4b;
+    --navbarHover: #FFDFA6;
+    --progressBar: #e5e7eb;
+}
+
+.theme-parchment {
+    --dark1: #3E2C1C;
+    --dark2: #6E4E2E;
+    --dark3: #A07654;
+    --light1: #fcfbf8;
+    --light2: #F6E1C3;
+    --light3: #E6CCAA;
+    --button: #C19A6B;
+    --buttonHover: #A07654;
+    --button2: #3b82f6;
+    --buttonHover2: #1068f4;
+    --bodyTextDark: #000000;
+    --bodyTextLight: #FFFFFF;
+    --formInput: #FFFFFF;
+    --formInputDenied: #a5a5a5;
+    --warningColor: #f98080;
+    --warningText: #4b4b4b;
+    --navbarHover: #FFDFA6;
+    --progressBar: #e5e7eb;
+}
+
+.theme-slate {
+    --dark1: #1E293B;
+    --dark2: #334155;
+    --dark3: #475569;
+    --light1: #F8FAFC;
+    --light2: #E2E8F0;
+    --light3: #CBD5E1;
+    --button: #64748B;
+    --buttonHover: #475569;
+    --button2: #3b82f6;
+    --buttonHover2: #1068f4;
+    --bodyTextDark: #000000;
+    --bodyTextLight: #FFFFFF;
+    --formInput: #FFFFFF;
+    --formInputDenied: #a5a5a5;
+    --warningColor: #f98080;
+    --warningText: #4b4b4b;
+    --navbarHover: #3e9ba3;
+    --progressBar: #e5e7eb;
+}
+
+.theme-night {
+    --dark1: #121212;
+    --dark2: #1E1E1E;
+    --dark3: #2C2C2C;
+    --light1: #666666;
+    --light2: #4D4D4D;
+    --light3: #333333;
+    --button: #757575;
+    --buttonHover: #5A5A5A;
+    --button2: #3b82f6;
+    --buttonHover2: #1068f4;
+    --bodyTextDark: #FFFFFF;
+    --bodyTextLight: #FFFFFF;
+    --formInput: #CDCDCD;
+    --formInputDenied: #a5a5a5;
+    --warningColor: #f98080;
+    --warningText: #4b4b4b;
+    --navbarHover: #3e9ba3;
+    --progressBar: #e5e7eb;
+}
+
+/* Scroll Bar Styles */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}

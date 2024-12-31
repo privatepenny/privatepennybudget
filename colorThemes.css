@@ -1,0 +1,62 @@
+/* Theme: Parchment */
+.theme-parchment {
+    --dark1: #FAF3E0;
+    --dark2: #E8DCC0;
+    --button: #C6A87D;
+    --light1: #3C2F2F;
+    --light2: #7F6756;
+    --buttonHover: #FFF1CC;
+}
+  
+/* Theme: Sunset */
+.theme-sunset {
+    --dark1: #FFEDD5;
+    --dark2: #FDBE8E;
+    --button: #FF8966;
+    --light1: #5D4037;
+    --light2: #8B5E34;
+    --buttonHover: #FF6F61;
+}
+
+/* Theme: Midnight */
+.theme-midnight {
+    --dark1: #1A1A2E;
+    --dark2: #16213E;
+    --button: #0F3460;
+    --light1: #EAEAEA;
+    --light2: #B1B1B1;
+    --buttonHover: #FFC300;
+}
+
+/* Theme: Bouquet */
+.theme-bouquet {
+    --dark1: #F4E1E1;
+    --dark2: #F2C2C2;
+    --button: #D36E70;
+    --light1: #4B2E83;
+    --light2: #77487D;
+    --buttonHover: #AF1C54;
+}
+
+/* Theme: Forest Moss */
+.theme-forest {
+    --dark1: #E8F5E9;
+    --dark2: #C8E6C9;
+    --button: #8BC34A;
+    --light1: #3A5311;
+    --light2: #6D9A3A;
+    --buttonHover: #4CAF50;
+}
+
+/* Theme: Ocean */
+.theme-ocean {
+    --dark1: #0A3D62;
+    --dark2: #1B4F72;
+    --dark3: #2E86C1;
+    --light1: #D6EAF8;
+    --light2: #AED6F1;
+    --light3: #85C1E9;
+    --button: #3498DB;
+    --buttonHover: #5DADE2;
+    --bodyTextDark: #000000;
+}
