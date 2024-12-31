@@ -7,8 +7,8 @@ export const useResetPassword = () => {
         setIsLoading(true);
 
         try {
-            const response = await fetch('http://localhost:4001/user/reset-password', {
-            // const response = await fetch('https://privatepennybudgettest-backend.onrender.com/user/reset-password', {
+            // const response = await fetch('http://localhost:4001/user/reset-password', {
+            const response = await fetch('https://privatepennybudget-backend.onrender.com/user/reset-password', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -79,8 +79,8 @@ const BudgetDetails = ({ budget }) => {
             const token = user ? user.token : null;
             if (!token) throw new Error('Authorization token not found. Please log in.');
 
-            const response = await fetch(`http://localhost:4001/budgets/${budget._id}`, {
-            // const response = await fetch(`https://privatepennybudgettest-backend.onrender.com/budgets/${budget._id}`, {
+            // const response = await fetch(`http://localhost:4001/budgets/${budget._id}`, {
+            const response = await fetch(`https://privatepennybudget-backend.onrender.com/budgets/${budget._id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

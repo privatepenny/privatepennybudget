@@ -37,8 +37,8 @@ export const useSettings = () => {
         const user = JSON.parse(localStorage.getItem('user'))
         const token = user ? user.token : null;
 
-        const response = await fetch('http://localhost:4001/user/settings', {
-        // const response = await fetch('https://privatepennybudgettest-backend.onrender.com/user/settings', {
+        // const response = await fetch('http://localhost:4001/user/settings', {
+        const response = await fetch('https://privatepennybudget-backend.onrender.com/user/settings', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',
@@ -68,8 +68,8 @@ export const useSettings = () => {
         const user = JSON.parse(localStorage.getItem('user'))
         const token = user ? user.token : null;
 
-        const response = await fetch('http://localhost:4001/user/delete', {
-        // const response = await fetch('https://privatepennybudgettest-backend.onrender.com/user/delete', {
+        // const response = await fetch('http://localhost:4001/user/delete', {
+        const response = await fetch('https://privatepennybudget-backend.onrender.com/user/delete', {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
