@@ -59,7 +59,7 @@ const TransactionForm = () => {
 
     useEffect(() => {
         const fetchBudgets = async () => {
-            const response = await fetch('/budgets', {
+            const response = await fetch('https://privatepennybudget-backend.onrender.com/budgets', {
                 headers: {
                     'Authorization': `Bearer ${user.token}`
                 }
@@ -80,7 +80,7 @@ const TransactionForm = () => {
         const fetchGoals = async () => {
             if (!user) return;
 
-            const response = await fetch('/goals', {
+            const response = await fetch('https://privatepennybudget-backend.onrender.com/goals', {
                 headers: {
                     'Authorization': `Bearer ${user.token}`,
                 },
@@ -141,7 +141,7 @@ const TransactionForm = () => {
             setGoals(updatedGoals);
         }
 
-        const response = await fetch('/transactions', {
+        const response = await fetch('https://privatepennybudget-backend.onrender.com/transactions', {
             method: 'POST',
             body: JSON.stringify(transaction),
             headers: {

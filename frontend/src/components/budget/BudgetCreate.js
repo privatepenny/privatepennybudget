@@ -88,7 +88,7 @@ const BudgetCreate = ({ onCancel }) => {
 
     const budget = { month, year, categories: updatedCategories, budgetedIncome };
 
-    const response = await fetch('/budgets', {
+    const response = await fetch('https://privatepennybudget-backend.onrender.com/budgets', {
         method: 'POST',
         body: JSON.stringify(budget),
         headers: {

@@ -11,7 +11,7 @@ const BudgetList = ({ onCreateClick, onSelectBudget }) => {
 
     useEffect(() => {
         const fetchBudgets = async () => {
-            const response = await fetch('/budgets', {
+            const response = await fetch('https://privatepennybudget-backend.onrender.com/budgets', {
                 headers: {
                     'Authorization': `Bearer ${user.token}`
                 }

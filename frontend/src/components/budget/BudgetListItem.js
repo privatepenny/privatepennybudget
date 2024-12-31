@@ -15,7 +15,7 @@ const BudgetListItem = ({ budget, onSelectBudget }) => {
             return
         }
 
-        const response = await fetch('/budgets/' + budget._id, {
+        const response = await fetch('https://privatepennybudget-backend.onrender.com/budgets/' + budget._id, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${user.token}`
@@ -44,7 +44,7 @@ const BudgetListItem = ({ budget, onSelectBudget }) => {
         if (response.ok) {
             dispatch({ type: 'SET_DEFAULT_BUDGET', payload: json });
             const fetchBudgets = async () => {
-                const response = await fetch('/budgets', {
+                const response = await fetch('https://privatepennybudget-backend.onrender.com/budgets', {
                     headers: {
                         'Authorization': `Bearer ${user.token}`,
                     },

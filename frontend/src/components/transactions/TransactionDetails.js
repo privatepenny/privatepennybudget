@@ -10,7 +10,7 @@ const TransactionDetails = ({ transaction }) => {
             return
         }
 
-        const response = await fetch('/transactions/' + transaction._id, {
+        const response = await fetch('https://privatepennybudget-backend.onrender.com/transactions/' + transaction._id, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${user.token}`

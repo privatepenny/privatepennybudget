@@ -36,7 +36,7 @@ const Budget = () => {
 
     useEffect(() => {
         const fetchBudgets = async () => {
-            const response = await fetch('/budgets', {
+            const response = await fetch('https://privatepennybudget-backend.onrender.com/budgets', {
                 headers: {
                     'Authorization': `Bearer ${user.token}`
                 }
@@ -52,7 +52,7 @@ const Budget = () => {
 
             setIsLoading(true)
 
-            const response = await fetch('/budgets', {
+            const response = await fetch('https://privatepennybudget-backend.onrender.com/budgets', {
                 headers: {
                     'Authorization': `Bearer ${user.token}`,
                 },

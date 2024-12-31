@@ -8,7 +8,7 @@ const ForgotPassword = () => {
     const handleForgotPassword = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('/user/forgot-password', {
+            const response = await fetch('https://privatepennybudget-backend.onrender.com/user/forgot-password', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email }),

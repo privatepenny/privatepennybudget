@@ -23,7 +23,7 @@ const Goals = () => {
       }
 
       try {
-        const response = await fetch('/goals', {
+        const response = await fetch('https://privatepennybudget-backend.onrender.com/goals', {
           headers: {
             Authorization: `Bearer ${user.token}`,
           },
@@ -132,7 +132,7 @@ const Goals = () => {
     const saving = { name, amountGoal, amountActual };
 
     try {
-      const response = await fetch('/goals', {
+      const response = await fetch('https://privatepennybudget-backend.onrender.com/goals', {
         method: 'POST',
         body: JSON.stringify(saving),
         headers: {

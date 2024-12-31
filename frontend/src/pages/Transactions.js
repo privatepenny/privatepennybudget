@@ -20,7 +20,7 @@ const Transactions = () => {
 
     useEffect(() => {
         const fetchTransactions = async () => {
-            const response = await fetch('/transactions', {
+            const response = await fetch('https://privatepennybudget-backend.onrender.com/transactions', {
                 headers: {
                     'Authorization': `Bearer ${user.token}`
                 }

@@ -33,7 +33,7 @@ const PaymentReminders = () => {
     }
 
     try {
-      const response = await fetch('/reminders', {
+      const response = await fetch('https://privatepennybudget-backend.onrender.com/reminders', {
         headers: {
           Authorization: `Bearer ${user.token}`,
         },
@@ -185,7 +185,7 @@ const PaymentReminders = () => {
     const newReminder = { name, date, amount };
 
     try {
-      const response = await fetch('/reminders', {
+      const response = await fetch('https://privatepennybudget-backend.onrender.com/reminders', {
         method: 'POST',
         body: JSON.stringify(newReminder),
         headers: {
